@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Then - My Docs</title>
+        <title>ColorSensor - My Docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -36,8 +36,8 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Home</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../colorsensor/" class="nav-link">ColorSensor</a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">ColorSensor</a>
                             </li>
                             <li class="navitem">
                                 <a href="../example/" class="nav-link">Example</a>
@@ -51,8 +51,8 @@
                             <li class="navitem">
                                 <a href="../output/" class="nav-link">Output</a>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">Then</a>
+                            <li class="navitem">
+                                <a href="../then/" class="nav-link">Then</a>
                             </li>
                             <li class="navitem">
                                 <a href="../touchsensor/" class="nav-link">TouchSensor</a>
@@ -66,12 +66,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../output/" class="nav-link">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../touchsensor/" class="nav-link">
+                                <a rel="next" href="../example/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -93,8 +93,12 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#then" class="nav-link">Then</a>
+            <li class="nav-item" data-level="1"><a href="#colorsensor" class="nav-link">ColorSensor</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#methods" class="nav-link">Methods</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -102,14 +106,16 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="then">Then</h1>
-<p>Enum for actions after some other motor action was completed. </p>
-<p>Can be:</p>
+<h1 id="colorsensor">ColorSensor</h1>
+<p><code>class ColorSensor(port)</code></p>
+<p>Object that allows interaction with a connected color sensor.</p>
+<p>Parameters:</p>
 <ul>
-<li>Coast - Don't brake actively </li>
-<li>Brake - Brake actively to standstil</li>
-<li>Hold - Same as brake. (In the future brakes and holds motor in standstil.)</li>
-</ul></div>
+<li>port (<a href="/input/">Input</a>): The port on the EV3 Brick, where the sensor is connected.</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<p><code>ambient()</code></p>
+<p>Returns the how much of the light is reflected to the sensor. </p></div>
             </div>
         </div>
 

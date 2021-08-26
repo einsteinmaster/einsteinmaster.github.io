@@ -37,6 +37,9 @@
                                 <a href=".." class="nav-link">Home</a>
                             </li>
                             <li class="navitem">
+                                <a href="../colorsensor/" class="nav-link">ColorSensor</a>
+                            </li>
+                            <li class="navitem">
                                 <a href="../example/" class="nav-link">Example</a>
                             </li>
                             <li class="navitem">
@@ -50,6 +53,9 @@
                             </li>
                             <li class="navitem">
                                 <a href="../then/" class="nav-link">Then</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../touchsensor/" class="nav-link">TouchSensor</a>
                             </li>
                         </ul>
 
@@ -108,6 +114,10 @@
 <li>port (<a href="/output/">Output</a>): The port on the EV3 Brick, where the motor is connected.</li>
 </ul>
 <h2 id="methods">Methods</h2>
+<p><code>angle()</code></p>
+<p>Returns the degree of the motor.</p>
+<p><code>reset_angle()</code></p>
+<p>Resets the degree of the motor to 0.</p>
 <p><code>stop()</code></p>
 <p>Stops the motor without braking.</p>
 <p><code>brake()</code></p>
@@ -132,6 +142,14 @@
 <ul>
 <li>speed(percetage) - Speed of motor in percent between -100 and 100.</li>
 <li>angle(deg) - Angle by which the motor should rotate.</li>
+<li>then(<a href="/then/">Then</a>) - What should be done after this action.</li>
+</ul>
+<p><code>run_target(speed, angle, then)</code></p>
+<p>Starts the motor for a specific rotation-angle and speed.</p>
+<p>Parameters:</p>
+<ul>
+<li>speed(percetage) - Speed of motor in percent between -100 and 100.</li>
+<li>angle(deg) - Angle to which the motor should rotate.</li>
 <li>then(<a href="/then/">Then</a>) - What should be done after this action.</li>
 </ul></div>
             </div>
